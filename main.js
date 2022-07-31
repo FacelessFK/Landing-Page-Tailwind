@@ -9,3 +9,12 @@ navBtn.addEventListener("click", function () {
     menuBar.classList.toggle("hidden");
     menuBar.classList.toggle("flex");
 });
+const darkMod = document.querySelector(".dark_mod");
+const light = document.querySelector(".light");
+const dark = document.querySelector(".moon");
+
+darkMod.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    light.classList.toggle("hidden");
+    dark.classList.toggle("hidden");
+});
